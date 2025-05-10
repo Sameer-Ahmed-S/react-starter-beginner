@@ -1,7 +1,8 @@
-function Greeting(obj) {
+function Greeting(props) {
   // write the logic here to receive the props
-
-  return <h1>{/* write code here , do not edit the h1 tag */}</h1>;
+  
+  const {name,age,occupation} = props;
+  return <h1>Hello {name} Thanks Babel :) is {age} old and works as {occupation}</h1>;
 }
 
 export default Greeting;

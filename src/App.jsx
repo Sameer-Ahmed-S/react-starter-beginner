@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       {/* write the code here to pass the required props to the Greeting component , do not edit any other code */}
-      <Greeting />
+      <Greeting name="Jasbir" age="34" occupation="engineer" />
     </div>
   );
 }

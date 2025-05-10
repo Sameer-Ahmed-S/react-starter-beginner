@@ -1,7 +1,1 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-})
+import { defineConfig } from 'vite';import react from '@vitejs/plugin-react';import babelLoopProtect from '/config/plugins/babel-loop-protect.js';export default defineConfig({  plugins: [    react({      babel: {        plugins: [         babelLoopProtect        ],      }    })  ],  base: '/code-server/68126030/preview/'});
