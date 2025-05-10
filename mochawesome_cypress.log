@@ -1,0 +1,85 @@
+It looks like this is your first time using Cypress: 13.2.0
+
+[STARTED] Task without title.
+[TITLE]  Verified Cypress!       /config/.cache/Cypress/13.2.0/Cypress
+[SUCCESS]  Verified Cypress!       /config/.cache/Cypress/13.2.0/Cypress
+
+Opening Cypress...
+Port 5173 is in use, trying another one...
+
+================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        13.2.0                                                                         │
+  │ Browser:        Electron 114 (headless)                                                        │
+  │ Node Version:   v14.21.3 (/usr/bin/node)                                                       │
+  │ Specs:          1 found (Greeting.cy.jsx)                                                      │
+  │ Searched:       **/*.cy.{js,jsx,ts,tsx}                                                        │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  Greeting.cy.jsx                                                                 (1 of 1)
+
+
+  Greeting Component
+    1) renders with correct props
+
+
+  0 passing (4s)
+  1 failing
+
+  1) Greeting Component
+       renders with correct props:
+     AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Hello Jasbir Thanks Babel :) is 25 old and works as developer' but never did.
+      at Context.<anonymous> (Greeting.cy.jsx:14:6)
+      at runnable.fn (http://localhost:5174/__cypress/runner/cypress_runner.js:138726:19)
+      at callFn (http://localhost:5174/__cypress/runner/cypress_runner.js:157371:21)
+      at Runnable.run (http://localhost:5174/__cypress/runner/cypress_runner.js:157358:7)
+      at <unknown> (http://localhost:5174/__cypress/runner/cypress_runner.js:163170:30)
+      at PassThroughHandlerContext.finallyHandler (http://localhost:5174/__cypress/runner/cypress_runner.js:4072:23)
+      at PassThroughHandlerContext.tryCatcher (http://localhost:5174/__cypress/runner/cypress_runner.js:1807:23)
+      at Promise._settlePromiseFromHandler (http://localhost:5174/__cypress/runner/cypress_runner.js:1519:31)
+
+
+
+[mochawesome] Report JSON saved to /config/workspace/mochawesome-report/mochawesome.json
+
+[mochawesome] Report HTML saved to /config/workspace/mochawesome-report/mochawesome.html
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      0                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  1                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     4 seconds                                                                        │
+  │ Spec Ran:     Greeting.cy.jsx                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  /config/workspace/cypress/screenshots/Greeting.cy.jsx/Greeting Component -- rend     (1280x720)
+     ers with correct props (failed).png                                                            
+
+
+================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✖  Greeting.cy.jsx                          00:04        1        -        1        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✖  1 of 1 failed (100%)                     00:04        1        -        1        -        -  
+
